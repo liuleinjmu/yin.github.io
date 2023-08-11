@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="origo.css" title="Origo" media="all" />
+	<title>Wang Lab</title>
+</head>
+
+<body class="light blue smaller freestyle01">
+<div id="layout">
+ 
+	<div class="row smaller">
+		<div class="col c5 smaller">
+			<h1><a href="index.html">WANG LAB</a></h1> <h3><a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology, Wuhan, Hubei, China</a></h3>
+		</div>
+		
+		<div class="col c7 aligncenter">
+			<p class="slogan">Statistical And Population Genetics <br> Medical Genomics</p>
+		</div>
+	</div>
+  
+	<div class="row">
+		<div class="col c12 aligncenter">
+			<img src="images/Wuhan2.jpg" width="960" height="240" alt="" />
+		</div>
+		<div class="col c12 alignright">
+			<font size=2>We are located in Wuhan, a metropolitan city in Central China besides the Yangtze River. </font>
+		</div>		
+	</div>
+ 
+	<div class="row">
+		<div class="col c2 alignleft">
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="people.html">People</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a class="current" href="software.html">Software</a>
+				<li><a href="jobs.html">Join us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+ 
+		<div class="col c10">
+			<h2>CLoMAT</h2>
+				CLoMAT stands for "Conditional Logistic Model Association Tests". 
+				
+				This R package implements three rare-variant association tests for matched case-control 
+				data under the conditional logistic regression (CLR) framework, namely CLR-Burden, 
+				CLR-SKAT, and CLR-MiST, as well as a heuristic and fast matching algorithm.
+				CLoMAT provides a general solution to control for population stratification by matching cases and controls 
+				based on their ancestry background. It is useful to empower genetic association studies in the 
+				setting with a large number of common controls. <br><br>
+
+				The CLoMAT R package and manual can be downloaded from
+				<a href="https://github.com/chaolongwang/CLoMAT" target="_blank">GitHub</a>. <br><br>
+				
+				<b>Citation for CLoMAT: </b><br><br>
+					<li>S Cheng*, J Lyu*, X Shi, K Wang, Z Wang, M Deng, B Sun, C Wang (2022). 
+					Rare variant association tests for ancestry-matched case-control data based on conditional logistic regression.
+					<b>Briefings in Bioinformatics</b>, 23(2): bbab572.
+					[<a href="https://doi.org/10.1093/bib/bbab572" target="_blank">link</a>]</li><br>		
+	
+			 <h2>GMMAT</h2>
+				GMMAT stands for "Generalized linear Mixed Model Association Test". This is an R package to perform association tests based 
+				on generalized linear mixed models (i.e. modelling outcomes with the exponential family distributions). The package implemented
+				a series of algorithms to improve the computational speed so that it is efficient to perform genome-wide scan in large-scale 
+				genetic studies (e.g. case-control disease studies). GMMAT is useful to control for family relatedness, population structure 
+				and complex study design in genome-wide association studies.
+				<a href="https://sbmi.uth.edu/faculty-and-staff/han-chen.htm" target="_blank">Dr. Han Chen</a> 
+				is the leading developer of this R package. <br><br>
+				
+				The GMMAT R package and manual can be downloaded 
+				<a href="https://content.sph.harvard.edu/xlin/software.html#gmmat" target="_blank">here</a>. <br><br>
+				<b>Citation for GMMAT: </b><br><br>
+					<li>H Chen*, C Wang*, MP Conomos, AM Stilp, Z Li, T Sofer, AA Szpiro, W Chen, JM Brehm, JC Celedon,
+					S Redline, GJ Papanicolaou, TA Thornton, CC Laurie, K Rice, X Lin (2016). 
+					Control for population structure and relatedness for binary traits in genetic association studies via logistic mixed models.
+					<b>American Journal of Human Genetics</b>, 98: 653-666.
+					[<a href="http://www.cell.com/ajhg/fulltext/S0002-9297(16)00063-X" target="_blank">link</a>]</li><br>		
+			 <h2>LASER</h2>
+				LASER stands for "Locating Ancestry from SEquence Reads". This package include two C++ programs, <i>laser</i> and <i>trace</i>, for 
+				estimating individual ancestry in a reference ancestry space using either shortgun sequence reads (<i>laser</i>) or genotype data (<i>trace</i>). 
+				Both programs were implemented under a unified framework based on principal components analysis (PCA) and projection Procrustes analysis.
+				Given a shared reference panel, <i>laser</i> and <i>trace</i> can place sequenced and genotyped samples into the same ancestry space.<br><br>
+
+				LASER can also perform standard PCA on genotype data to explore population structure and to create the reference ancestry space. 
+				Different options to compute PC scores and PC loadings have been implemented in the LASER program (version 2.01 or later). <br><br>
+				
+				The LASER program and a detailed manual can be downloaded 
+				<a href="http://csg.sph.umich.edu/chaolong/LASER/" target="_blank">here</a>. <br><br>
+				
+				<b>Citation for LASER: </b><br><br>
+					<li>C Wang*, X Zhan*, J Bragg-Gresham, HM Kang, D Stambolian, E Chew, K Branham, J Heckenlively, 
+					The FUSION Study, RS Fulton, RK Wilson, ER Mardis, X Lin, A Swaroop, S Z&ouml;llner, GR Abecasis (2014). 
+					Ancestry estimation and control of population stratification for sequence-based association studies. 
+					<b>Nature Genetics</b>, 46: 409-415.
+					[<a href="http://www.nature.com/ng/journal/v46/n4/full/ng.2924.html" target="_blank">link</a>]</li><br>
+					
+					<li>C Wang, X Zhan, L Liang, GR Abecasis, X Lin (2015). 
+					Improved ancestry estimation for both genotyping and sequencing data using projection Procrustes analysis and genotype imputation. 
+					<b>American Journal of Human Genetics</b>, 96: 926-937.
+					[<a href="http://www.cell.com/ajhg/abstract/S0002-9297(15)00155-X" target="_blank">link</a>]</li><br>
+			<h2>LASER Server</h2>
+				This is a web server that provides a unified framework to estimate ancestry using either genotyping or sequencing data.
+				The server is based on the LASER algorithm (Wang et al. 2014 Nature Genetics, Wang et al. 2015 AJHG). 
+				We provide a series of built-in ancestry reference panels on the server so that users do not need to prepare their own panels. 
+				By using the same ancestry reference panel on the server, researchers can directly compare ancestry estimates across different studies.
+				We also provides interactive graphical visualization to faciliate quick exploration of the ancestry background of samples. <br><br>
+				Please try our <a href="http://laser.sph.umich.edu" target="_blank">LASER Server</a> and have fun! <br><br>
+				<b>Citation for LASER Server: </b><br><br>
+					<li>D Taliun, S Chothani, S Schonherr, L Forer, M Boehnke, GR Abecasis, C Wang (2017).
+					LASER server: ancestry tracing with genotypes or sequence reads.
+					<b>Bioinformatics</b>, 33: 2056-2058.
+				[<a href="https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btx075" target="_blank">link</a>] </li><br>					
+			<h2>MicroDrop</h2>
+					MicroDrop is a C++ program for estimating and correcting for allelic dropout in microsatellite data when replicated genotypes are 
+					not available. Based on an allele frequency model, the program implements an expectation-maximization algorithm to search for 
+					maximum-likelihood estimates of the allele frequencies, sample-specific and locus-specific dropout rates, and an inbreeding coefficient.
+					With the estimated parameter values, an empirical Bayesian strategy is used to prepare multiple imputed data sets to circumvent allelic 
+					dropout in downstream data analyses. <br><br>
+					The MicroDrop program and a detailed manual can be downloaded 
+					<a href="http://rosenberglab.stanford.edu/microdrop.html" target="_blank">here</a>. <br><br>
+					<b>Citation for MicroDrop: </b><br><br>
+					<li>C Wang, KB Schroeder, NA Rosenberg (2012). 
+					A maximum-likelihood method to correct for allelic dropout in microsatellite data with no replicate genotypes. 
+					<b>Genetics</b> 192: 651-669. 
+					[<a href="http://www.genetics.org/content/192/2/651" target="_blank">link</a>] </li><br>
+			 <h2>SEEKIN</h2>
+				SEEKIN stands for "SEquence-based Estimation of KINship". This is a C++ program to estimate pairwise kinship coefficients for both 
+				homogeneous samples and heterogeneous samples with population structure and admixture. The method was initially developed to analyze 
+				sparse sequencing data, such as off-target data from targeted sequencing experiments, in which genotypes are uncertain. 
+				But it can also be applied to high-quality genotyping data. The program is computationally efficient with multithreading feature 
+				and takes standard VCF files as the input. <br><br>
+				The SEEKIN software package is available on  
+				<a href="https://github.com/chaolongwang/SEEKIN" target="_blank">GitHub</a>. <br><br>
+				<b>Citation for SEEKIN: </b><br><br>
+				<li>J Dou*, B Sun*, X Sim, JD Hughes, DF Reilly, ES Tai, J Liu, C Wang (2017). Estimation of kinship coefficient in structured and 
+				admixed populations using sparse sequencing data. <b>PLOS Genetics</b>, 13: e1007021. 
+				[<a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007021" target="_blank">link</a>] </li><br>
+			
+			<h2>WEScall</h2>
+				WEScall is a genotype calling pipeline for both whole-exome sequencing (WES) and whole-genome seqeuncing (WGS) data. It was designed to 
+				utilize linkage disequilibrium (LD) information within the study sample and from an external WGS reference panel (such as the 1000 Genomes Project)
+				to improve genotype calling accuracy. For WES, the pipeline makes utilization of the shallow off-target seqeuncing data, allowing for 
+				relatively accurate genotyping across non-coding regions, and thus improving downstream association analysis and polygenic risk prediction. 			
+				For more details, please see the reference listed below. <br><br>
+				The WEScall software pipeline is available on
+				<a href="https://github.com/dwuab/WEScall" target="_blank">GitHub</a>. <br><br>
+				<b>Citation for WEScall: </b><br><br>
+				<li>J Dou*, D Wu*, L Ding, K Wang, M Jiang, X Chai, DF Reilly, ES Tai, J Liu, X Sim, S Cheng, C Wang (2021). 
+				 Using off-target data from whole-exome sequencing to improve genotyping accuracy, association analysis, and polygenic risk prediction. 
+				 <b>Briefings in Bioinformatics</b>, 22(3): bbaa084.
+				 [<a href="https://doi.org/10.1093/bib/bbaa084" target="_blank">link</a>] </li><br>
+		</div>
+	</div>
+ 
+	<div id="footer" class="row">
+		<div class="col c12 aligncenter">
+			<h3>&copy; 2015 Chaolong Wang</h3>
+			<p><a href="http://andreasviklund.com/dt_portfolio/origo/">Template design</a> by <a href="http://andreasviklund.com/">Andreas Viklund</a><br />
+		</div>
+	</div>
+ </div>
+</body>
+</html>
